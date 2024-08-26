@@ -220,4 +220,30 @@
         app:layout_constraintTop_toBottomOf="@id/dateOfBirthEt"
         app:layout_constraintStart_toStartOf="parent"/>
 
+
+    <TextView
+        android:id="@+id/vacanciesOfInterestTv"
+        android:text="@string/vacanciesOfInterest"
+
+        android:textColor="@color/black"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/schoolTrainingSp" />
+    <EditText
+        android:id="@+id/vacanciesOfInterestEt"
+        android:autofillHints="text"
+        android:inputType="text"
+        android:labelFor="@id/vacanciesOfInterestTv"
+
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vacanciesOfInterest_placeholder"
+
+        app:layout_constraintTop_toBottomOf="@id/vacanciesOfInterestTv" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

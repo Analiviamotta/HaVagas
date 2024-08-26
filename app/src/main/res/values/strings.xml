@@ -14,8 +14,10 @@
     <string name="gender">Gênero:</string>
     <string name="dateOfBirth">data de nascimento:</string>
     <string name="dateOfBirthTv_placeholder">Data de nascimento</string>
-    
-    
+    <string name="vacanciesOfInterest">Vagas de interesse:</string>
+    <string name="vacanciesOfInterest_placeholder">Digite suas vagas de interesse</string>
+
+
     <string-array name="schoolOptions">
         <item>fundamental</item>,
         <item>médio</item>,
