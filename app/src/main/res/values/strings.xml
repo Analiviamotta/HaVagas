@@ -19,6 +19,10 @@
     <string name="clear">Limpar</string>
     <string name="save">Salvar</string>
     <string name="addCel">Adicionar celular</string>
+    <string name="graduationYear_placeholder">Ano de graduação</string>
+    <string name="institutionYear_placeholder">Ano de Instituição</string>
+    <string name="thesisTitle_placeholder">Título de Monografia\n</string>
+    <string name="advisorTitle_placeholder">Titulo de Orientador</string>
 
 
     <string-array name="schoolOptions">

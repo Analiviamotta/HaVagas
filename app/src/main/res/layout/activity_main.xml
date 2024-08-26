@@ -261,6 +261,78 @@
         app:layout_constraintTop_toBottomOf="@id/dateOfBirthEt"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <LinearLayout
+        android:id="@+id/schoolTrainingLt"
+
+        android:visibility="gone"
+        android:orientation="vertical"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        app:layout_constraintStart_toStartOf="@id/schoolTrainingSp">
+
+        <EditText
+            android:id="@+id/graduationYear"
+            android:autofillHints="year"
+            android:inputType="date"
+
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/graduationYear_placeholder"
+             />
+
+        <EditText
+            android:id="@+id/institutionYear"
+            android:autofillHints="year"
+
+            android:inputType="date"
+            android:textColor="@color/black"
+
+            android:background="@android:drawable/edit_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/institutionYear_placeholder"
+
+           />
+
+
+        <EditText
+            android:id="@+id/thesisTitle"
+            android:autofillHints="title"
+
+            android:inputType="text"
+
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/thesisTitle_placeholder" />
+
+
+        <EditText
+            android:id="@+id/advisorTitle"
+            android:autofillHints="name"
+
+            android:inputType="text"
+
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/advisorTitle_placeholder" />
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/vacanciesOfInterestTv"
