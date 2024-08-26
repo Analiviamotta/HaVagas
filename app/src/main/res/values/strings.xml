@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HaVagas</string>
+    <string name="name_placeholder">Digite seu nome</string>
+    <string name="name">Nome:</string>
 </resources>
