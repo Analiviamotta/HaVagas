@@ -144,6 +144,45 @@
         app:layout_constraintTop_toBottomOf="@id/typeTelRg" />
 
 
+    <TextView
+        android:id="@+id/GenderTv"
+        android:text="@string/gender"
+
+        android:textColor="@color/black"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/TelEt" />
+
+    <RadioGroup
+        android:id="@+id/genderRg"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GenderTv">
+
+        <RadioButton
+            android:id="@+id/femaleRb"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/masculineRb"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/masculine" />
+
+    </RadioGroup>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

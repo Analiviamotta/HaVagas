@@ -9,4 +9,7 @@
     <string name="business">Telefone Comercial</string>
     <string name="home">Telefone Residencial</string>
     <string name="tel_placeholder">Digite seu telefone</string>
+    <string name="female">feminino</string>
+    <string name="masculine">masculino</string>
+    <string name="gender">Gênero:</string>
 </resources>
