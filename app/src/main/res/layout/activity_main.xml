@@ -75,5 +75,15 @@
 
         app:layout_constraintTop_toBottomOf="@id/emailTv" />
 
+    <CheckBox
+        android:id="@+id/emailCb"
+        android:text="@string/emailCbText"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/emailEt"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
