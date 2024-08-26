@@ -8,4 +8,5 @@
     <string name="typeTel">Telefone</string>
     <string name="business">Telefone Comercial</string>
     <string name="home">Telefone Residencial</string>
+    <string name="tel_placeholder">Digite seu telefone</string>
 </resources>
