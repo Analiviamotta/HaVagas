@@ -5,4 +5,7 @@
     <string name="email_placeholder">Digite seu e-mail</string>
     <string name="email">e-mail</string>
     <string name="emailCbText">Deseja receber atualizações?</string>
+    <string name="typeTel">Telefone</string>
+    <string name="business">Telefone Comercial</string>
+    <string name="home">Telefone Residencial</string>
 </resources>
