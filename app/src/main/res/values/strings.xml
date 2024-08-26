@@ -16,6 +16,8 @@
     <string name="dateOfBirthTv_placeholder">Data de nascimento</string>
     <string name="vacanciesOfInterest">Vagas de interesse:</string>
     <string name="vacanciesOfInterest_placeholder">Digite suas vagas de interesse</string>
+    <string name="clear">Limpar</string>
+    <string name="save">Salvar</string>
 
 
     <string-array name="schoolOptions">
