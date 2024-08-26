@@ -144,6 +144,45 @@
         app:layout_constraintTop_toBottomOf="@id/typeTelRg" />
 
 
+    <Button
+        android:id="@+id/addCelBt"
+        android:text="@string/addCel"
+
+        android:paddingHorizontal="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintTop_toBottomOf="@id/telEt"
+        app:layout_constraintStart_toStartOf="@id/telEt" />
+
+    <LinearLayout
+        android:id="@+id/celLt"
+
+        android:visibility="gone"
+        android:orientation="horizontal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        app:layout_constraintStart_toStartOf="@id/addCelBt">
+
+        <EditText
+            android:id="@+id/celEd"
+            android:autofillHints="telephone"
+            android:inputType="phone"
+
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/tel_placeholder"
+            app:layout_constraintTop_toBottomOf="@id/typeTelRg" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/genderTv"
         android:text="@string/gender"
@@ -153,7 +192,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:layout_constraintTop_toBottomOf="@id/telEt" />
+        app:layout_constraintTop_toBottomOf="@id/addCelBt" />
 
     <RadioGroup
         android:id="@+id/genderRg"

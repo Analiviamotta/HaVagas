@@ -18,6 +18,7 @@
     <string name="vacanciesOfInterest_placeholder">Digite suas vagas de interesse</string>
     <string name="clear">Limpar</string>
     <string name="save">Salvar</string>
+    <string name="addCel">Adicionar celular</string>
 
 
     <string-array name="schoolOptions">
