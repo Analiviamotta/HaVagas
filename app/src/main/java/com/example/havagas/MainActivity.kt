@@ -29,21 +29,25 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val selectedTraining = parent?.getItemAtPosition(position).toString()
 
-
                 when (selectedTraining) {
-                    "Fundamental", "Médio" -> {
+                    "fundamental", "médio" -> {
                         amb.schoolTrainingLt.isVisible = true
                         amb.graduationYear.isVisible = true
+                        amb.institutionYear.isVisible = false
+                        amb.thesisTitle.isVisible = false
+                        amb.advisorTitle.isVisible = false
                     }
-                    "Graduação", "Especialização" -> {
+                    "graduação", "especialização" -> {
                         amb.schoolTrainingLt.isVisible = true
-                        amb.institutionYear.isVisible = true
                         amb.graduationYear.isVisible = true
+                        amb.institutionYear.isVisible = true
+                        amb.thesisTitle.isVisible = false
+                        amb.advisorTitle.isVisible = false
                     }
-                    "Mestrado", "Doutorado" -> {
+                    "mestrado", "doutorado" -> {
                         amb.schoolTrainingLt.isVisible = true
-                        amb.institutionYear.isVisible = true
                         amb.graduationYear.isVisible = true
+                        amb.institutionYear.isVisible = true
                         amb.thesisTitle.isVisible = true
                         amb.advisorTitle.isVisible = true
                     }
@@ -51,12 +55,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
+
             }
-
-
-
         }
-
         amb.clearBt.setOnClickListener {
 
             amb.nameEt.text.clear()
