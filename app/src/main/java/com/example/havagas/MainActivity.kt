@@ -53,5 +53,34 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }
-}}
+        }
+
+        amb.clearBt.setOnClickListener {
+
+            amb.nameEt.text.clear()
+            amb.emailEt.text.clear()
+            amb.telEt.text.clear()
+            amb.celEd.text.clear()
+            amb.dateOfBirthEt.text.clear()
+            amb.graduationYear.text.clear()
+            amb.institutionYear.text.clear()
+            amb.thesisTitle.text.clear()
+            amb.advisorTitle.text.clear()
+            amb.vacanciesOfInterestEt.text.clear()
+
+
+            amb.typeTelRg.clearCheck()
+            amb.genderRg.clearCheck()
+
+
+            amb.emailCb.isChecked = false
+
+
+            amb.schoolTrainingSp.setSelection(0)
+
+
+            amb.schoolTrainingLt.isVisible = false
+            amb.celLt.isVisible = false
+        }
+
+    }}
