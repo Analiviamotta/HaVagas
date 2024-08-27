@@ -4,6 +4,7 @@ import Form
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         amb.schoolTrainingSp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                val selectedTraining = parent?.getItemAtPosition(position).toString()
+                val selectedTraining = (view as TextView).text.toString()
 
                 when (selectedTraining) {
                     "fundamental", "médio" -> {

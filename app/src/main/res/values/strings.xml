@@ -26,10 +26,10 @@
 
 
     <string-array name="schoolOptions">
-        <item>fundamental</item>,
-        <item>médio</item>,
-        <item>graduação</item>,
-        <item>especialização</item>,
+        <item>fundamental</item>
+        <item>médio</item>
+        <item>graduação</item>
+        <item>especialização</item>
         <item>mestrado</item>
         <item> doutorado</item>
     </string-array>

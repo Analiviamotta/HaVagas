@@ -175,6 +175,7 @@
             android:id="@+id/celEd"
             android:autofillHints="telephone"
             android:inputType="phone"
+            android:visibility="gone"
 
             android:textColor="@color/black"
             android:background="@android:drawable/edit_text"
@@ -282,6 +283,8 @@
             android:autofillHints="year"
             android:inputType="date"
 
+            android:visibility="gone"
+
             android:textColor="@color/black"
             android:background="@android:drawable/edit_text"
 
@@ -296,6 +299,9 @@
             android:autofillHints="year"
 
             android:inputType="date"
+
+            android:visibility="gone"
+
             android:textColor="@color/black"
 
             android:background="@android:drawable/edit_text"
@@ -313,6 +319,7 @@
             android:autofillHints="title"
 
             android:inputType="text"
+            android:visibility="gone"
 
             android:textColor="@color/black"
             android:background="@android:drawable/edit_text"
@@ -328,6 +335,7 @@
             android:autofillHints="name"
 
             android:inputType="text"
+            android:visibility="gone"
 
             android:textColor="@color/black"
             android:background="@android:drawable/edit_text"
