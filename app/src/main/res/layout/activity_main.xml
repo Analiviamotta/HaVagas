@@ -381,9 +381,8 @@
             <EditText
                 android:id="@+id/birthday_et"
 
-                android:hint="DD/MM/AAAA"
+                android:hint="@string/birthday_hint"
 
-                android:padding="12dp"
 
                 android:focusable="false"
                 android:clickable="true"
@@ -396,6 +395,51 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/degree_ll"
+            android:paddingVertical="16dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/birthday_ll">
+
+            <TextView
+                android:id="@+id/degree_tv"
+
+                android:text="@string/degree"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <Spinner
+                android:id="@+id/degree_sp"
+
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="8dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:entries="@array/degree_options"
+
+                android:background="@color/background_input"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
 
         </LinearLayout>
