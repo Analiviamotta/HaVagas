@@ -14,4 +14,7 @@
     <string name="cellphone_hint">Digite seu número de celular</string>
     <string name="cellphone">Celular:</string>
     <string name="add_cellphone">Adicionar celular</string>
+    <string name="gender">Sexo:</string>
+    <string name="female">Feminino</string>
+    <string name="male">Masculino</string>
 </resources>

@@ -293,6 +293,64 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/gender_ll"
+            android:paddingVertical="16dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cellphone_ll">
+
+            <TextView
+                android:id="@+id/gender"
+
+                android:text="@string/gender"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <RadioGroup
+                android:id="@+id/gender_rg"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/female_rb"
+
+                    android:checked="true"
+
+                    android:text="@string/female"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+
+                    android:text="@string/male"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
