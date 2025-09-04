@@ -350,6 +350,56 @@
             </RadioGroup>
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/birthday_ll"
+            android:paddingVertical="16dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender_ll">
+
+            <TextView
+                android:id="@+id/birthday_tv"
+
+                android:text="Preencha sua data de aniversário"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <EditText
+                android:id="@+id/birthday_et"
+
+                android:hint="DD/MM/AAAA"
+
+                android:padding="12dp"
+
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+
+                android:background="@color/background_input"
+
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="8dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
