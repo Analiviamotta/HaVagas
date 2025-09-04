@@ -2,4 +2,5 @@
     <string name="app_name">HaVagas</string>
     <string name="title">Ha Vagas!</string>
     <string name="full_name">Nome Completo:</string>
+    <string name="e_mail">E-mail</string>
 </resources>
