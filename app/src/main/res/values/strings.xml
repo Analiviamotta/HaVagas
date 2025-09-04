@@ -32,6 +32,8 @@
     <string name="advisor">Nome do Orientador:</string>
     <string name="advisor_hint">Digite o nome do Orientador</string>
     <string name="job_of_interest">Vaga de interesse:</string>
+    <string name="save">Salvar</string>
+    <string name="clear">Limpar</string>
 
     <string-array name="degree_options">
         <item>Fundamental</item>

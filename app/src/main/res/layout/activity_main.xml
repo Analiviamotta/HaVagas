@@ -741,6 +741,36 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
+        <Button
+            android:id="@+id/save_btn"
+
+            android:text="@string/save"
+
+            android:layout_marginTop="8dp"
+
+            android:padding="8dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/job_of_interest_ll" />
+
+        <Button
+            android:id="@+id/clear_btn"
+
+            android:text="@string/clear"
+
+            android:padding="8dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/save_btn" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
