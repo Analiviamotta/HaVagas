@@ -695,8 +695,50 @@
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
+        </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/job_of_interest_ll"
+            android:paddingVertical="16dp"
 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/degree_ll">
+
+            <TextView
+                android:id="@+id/job_of_interest_tv"
+
+                android:text="@string/job_of_interest"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <EditText
+                android:id="@+id/job_of_interest_et"
+
+                android:hint="Digite sua vaga de interesse"
+
+                android:inputType="text"
+
+                android:background="@color/background_input"
+
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="8dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
 
