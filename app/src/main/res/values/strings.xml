@@ -5,4 +5,5 @@
     <string name="e_mail">E-mail</string>
     <string name="e_mail_hint">Digite o seu e-mail</string>
     <string name="name_hint">Digite o seu nome</string>
+    <string name="email_notify">Receber notificações por e-mail com atualizações de oportunidades.</string>
 </resources>

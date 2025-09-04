@@ -78,6 +78,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/email_ll"
             android:paddingVertical="16dp"
 
             android:layout_width="match_parent"
@@ -118,8 +119,18 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-        </LinearLayout>
 
+            <CheckBox
+                android:id="@+id/email_notifications_cb"
+
+                android:checked="true"
+                android:text="@string/email_notify"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintStart_toStartOf="parent"/>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
