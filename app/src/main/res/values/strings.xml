@@ -25,6 +25,12 @@
     <string name="year_of_graduation_hint">Digite o ano da sua graduacão</string>
     <string name="institution_hint">Digite o nome da sua Instituicao</string>
     <string name="institution">Instituicao</string>
+    <string name="year_of_completion">Ano de conclusao</string>
+    <string name="year_of_completion_et">Digite o ano de conclusão</string>
+    <string name="thesis_title">Titulo da Monografia</string>
+    <string name="thesis_title_hint">Digite o titulo da monografia</string>
+    <string name="advisor">Nome do Orientador</string>
+    <string name="advisor_hint">Digite o nome do Orientador</string>
 
     <string-array name="degree_options">
         <item>Fundamental</item>

@@ -556,6 +556,147 @@
             </LinearLayout>
 
 
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/year_of_completion_and_institution_and_thesis_title_and_advisor_ll"
+
+
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/year_of_completion_tv"
+
+                    android:text="@string/year_of_completion"
+
+                    android:textSize="16sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <EditText
+                    android:id="@+id/year_of_completion_et"
+
+                    android:hint="@string/year_of_completion_et"
+
+                    android:inputType="number"
+
+                    android:background="@color/background_input"
+
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/thesis_title_tv"
+
+                    android:text="@string/thesis_title"
+
+                    android:textSize="16sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <EditText
+                    android:id="@+id/thesis_title_et"
+
+                    android:hint="@string/thesis_title_hint"
+
+                    android:inputType="number"
+
+                    android:background="@color/background_input"
+
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/institution_name_tv"
+
+                    android:text="@string/institution"
+
+                    android:textSize="16sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <EditText
+                    android:id="@+id/institution_name_et"
+
+                    android:hint="@string/institution_hint"
+
+                    android:inputType="number"
+
+                    android:background="@color/background_input"
+
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/advisor_tv"
+
+                    android:text="@string/advisor"
+
+                    android:textSize="16sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <EditText
+                    android:id="@+id/advisor_et"
+
+                    android:hint="@string/advisor_hint"
+
+                    android:inputType="number"
+
+                    android:background="@color/background_input"
+
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
