@@ -384,9 +384,7 @@
                 android:hint="@string/birthday_hint"
 
 
-                android:focusable="false"
-                android:clickable="true"
-                android:inputType="none"
+                android:inputType="date"
 
                 android:background="@color/background_input"
 
@@ -440,6 +438,49 @@
 
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:id="@+id/degree_year_ll"
+
+                android:visibility="gone"
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/degree_year_tv"
+
+                    android:text="@string/degree_year"
+
+                    android:textSize="16sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <EditText
+                    android:id="@+id/degree_year_et"
+
+                    android:hint="@string/degree_year_hint"
+
+                    android:inputType="number"
+
+                    android:background="@color/background_input"
+
+                    android:paddingVertical="12dp"
+                    android:paddingHorizontal="8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
 
         </LinearLayout>

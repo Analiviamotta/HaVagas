@@ -19,6 +19,8 @@
     <string name="male">Masculino</string>
     <string name="degree">Formacão:</string>
     <string name="birthday_hint">DD/MM/AAAA</string>
+    <string name="degree_year">Ano de formatura:</string>
+    <string name="degree_year_hint">Digite o ano da formatura</string>
 
     <string-array name="degree_options">
         <item>Fundamental</item>
