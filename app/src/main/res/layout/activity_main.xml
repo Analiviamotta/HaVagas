@@ -64,7 +64,7 @@
             <EditText
                 android:id="@+id/nameEt"
 
-                android:hint="Digite o seu nome"
+                android:hint="@string/name_hint"
 
                 android:inputType="textPersonName"
 
@@ -107,7 +107,7 @@
             <EditText
                 android:id="@+id/emailEt"
 
-                android:hint="Digite o seu e-mail"
+                android:hint="@string/e_mail_hint"
 
                 android:inputType="textEmailAddress"
 

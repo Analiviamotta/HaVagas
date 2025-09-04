@@ -3,4 +3,6 @@
     <string name="title">Ha Vagas!</string>
     <string name="full_name">Nome Completo:</string>
     <string name="e_mail">E-mail</string>
+    <string name="e_mail_hint">Digite o seu e-mail</string>
+    <string name="name_hint">Digite o seu nome</string>
 </resources>
