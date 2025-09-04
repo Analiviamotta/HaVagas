@@ -6,9 +6,12 @@
     <string name="e_mail_hint">Digite o seu e-mail</string>
     <string name="name_hint">Digite o seu nome</string>
     <string name="email_notify">Receber notificações por e-mail com atualizações de oportunidades.</string>
-    <string name="phone">Telefone</string>
+    <string name="phone">Telefone:</string>
     <string name="phone_hint">Digite seu telefone</string>
     <string name="phone_type_tv">Tipo do telefone informado:</string>
     <string name="commercial">Commercial</string>
     <string name="residential">Residencial</string>
+    <string name="cellphone_hint">Digite seu número de celular</string>
+    <string name="cellphone">Celular:</string>
+    <string name="add_cellphone">Adicionar celular</string>
 </resources>
