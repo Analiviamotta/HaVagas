@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HaVagas</string>
     <string name="title">Ha Vagas!</string>
+    <string name="full_name">Nome Completo:</string>
 </resources>
