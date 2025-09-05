@@ -21,7 +21,7 @@
     <string name="birthday_hint">DD/MM/AAAA</string>
     <string name="degree_year">Ano de formatura:</string>
     <string name="degree_year_hint">Digite o ano da formatura</string>
-    <string name="year_of_gradution">Ano de Graduacão:</string>
+    <string name="year_of_gradution">Ano de Conclusao:</string>
     <string name="year_of_graduation_hint">Digite o ano da sua graduacão</string>
     <string name="institution_hint">Digite o nome da sua Instituicao</string>
     <string name="institution">Instituicao:</string>

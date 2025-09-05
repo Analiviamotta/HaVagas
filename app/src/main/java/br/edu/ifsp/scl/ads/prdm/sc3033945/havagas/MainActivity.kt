@@ -46,6 +46,17 @@ class MainActivity : AppCompatActivity() {
                   hideYearDegreeField()
                 }
 
+                if(degreeView.equals("Graduação") || degreeView.equals("Especialização")){
+                    showConclusionYearAndInstitutionFields()
+                }else {
+                    hideConclusionYearAndInstitutionFields()
+                }
+
+                if(degreeView.equals("Mestrado") || degreeView.equals("Doutorado")){
+                    showYearOfCompletionAndInstitutionAndThesisTitleAndAdvisor()
+                }else{
+                    hideYearOfCompletionAndInstitutionAndThesisTitleAndAdvisor()
+                }
 
             }
 
@@ -63,6 +74,27 @@ class MainActivity : AppCompatActivity() {
         amb.degreeYearEt.setText("")
     }
 
+    private fun showYearOfCompletionAndInstitutionAndThesisTitleAndAdvisor(){
+        amb.yearOfCompletionAndInstitutionAndThesisTitleAndAdvisorLl.visibility = View.VISIBLE
+    }
+
+    private fun hideYearOfCompletionAndInstitutionAndThesisTitleAndAdvisor(){
+        amb.yearOfCompletionAndInstitutionAndThesisTitleAndAdvisorLl.visibility = View.GONE
+        amb.yearOfCompletionEt.setText("")
+        amb.institutionNameEt.setText("")
+        amb.thesisTitleEt.setText("")
+        amb.advisorEt.setText("")
+    }
+
+    private fun showConclusionYearAndInstitutionFields(){
+        amb.yearOfGraduationAndInstitution.visibility = View.VISIBLE
+    }
+
+    private fun hideConclusionYearAndInstitutionFields(){
+        amb.yearOfGraduationAndInstitution.visibility = View.GONE
+        amb.yearOfGraduationEt.setText("")
+        amb.institutionEt.setText("")
+    }
 
     private fun onAddCellPhone(show: Boolean) {
         amb.cellPhoneNumberLl.visibility =
