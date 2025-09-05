@@ -1,6 +1,9 @@
 package br.edu.ifsp.scl.ads.prdm.sc3033945.havagas
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifsp.scl.ads.prdm.sc3033945.havagas.databinding.ActivityMainBinding
 
@@ -25,12 +28,46 @@ class MainActivity : AppCompatActivity() {
         setContentView(amb.root)
 
         amb.addCellphoneCb.setOnCheckedChangeListener{ _, isChecked ->
-            changeCellphoneVisibility(isChecked)
+            onAddCellPhone(isChecked)
+        }
+
+        amb.degreeSp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val degreeView = (view as TextView).text.toString()
+
+                if (degreeView.equals("Fundamental") || degreeView.equals("Médio")) {
+                   showYearDegreeField()
+                } else {
+                  hideYearDegreeField()
+                }
+
+
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
         }
     }
 
-    private fun changeCellphoneVisibility(show: Boolean) {
+    private fun showYearDegreeField(){
+        amb.degreeYearLl.visibility = View.VISIBLE
+    }
+
+    private fun hideYearDegreeField(){
+        amb.degreeYearLl.visibility = View.GONE
+        amb.degreeYearEt.setText("")
+    }
+
+
+    private fun onAddCellPhone(show: Boolean) {
         amb.cellPhoneNumberLl.visibility =
             if (show) android.view.View.VISIBLE else android.view.View.GONE
     }
+
+
 }
