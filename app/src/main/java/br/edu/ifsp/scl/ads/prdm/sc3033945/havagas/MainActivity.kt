@@ -6,6 +6,7 @@ import br.edu.ifsp.scl.ads.prdm.sc3033945.havagas.databinding.ActivityMainBindin
 
 // o AppCompatActivity é o que faz o main activity ser uma tela
 class MainActivity : AppCompatActivity() {
+
     // val é uma variavel de leitura apenas
     // o by lazy significa que o que está dentro da chaves só será criado uma vez,
     // depois fica em cache
@@ -22,5 +23,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // define qual layout será exibido na activity
         setContentView(amb.root)
+
+        amb.addCellphoneCb.setOnCheckedChangeListener{ _, isChecked ->
+            changeCellphoneVisibility(isChecked)
+        }
+    }
+
+    private fun changeCellphoneVisibility(show: Boolean) {
+        amb.cellPhoneNumberLl.visibility =
+            if (show) android.view.View.VISIBLE else android.view.View.GONE
     }
 }
