@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
             onAddCellPhone(isChecked)
         }
 
+        amb.clearBtn.setOnClickListener{
+            clearForm()
+        }
+
         amb.degreeSp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -99,6 +103,23 @@ class MainActivity : AppCompatActivity() {
     private fun onAddCellPhone(show: Boolean) {
         amb.cellPhoneNumberLl.visibility =
             if (show) android.view.View.VISIBLE else android.view.View.GONE
+    }
+
+    private fun clearForm(){
+        amb.nameEt.setText("")
+        amb.emailEt.setText("")
+        amb.phoneEt.setText("")
+        amb.cellphoneEt.setText("")
+        amb.birthdayEt.setText("")
+        amb.yearOfCompletionEt.setText("")
+        amb.yearOfGraduationEt.setText("")
+        amb.degreeYearEt.setText("")
+        amb.advisorEt.setText("")
+        amb.thesisTitleEt.setText("")
+        amb.institutionEt.setText("")
+        amb.institutionNameEt.setText("")
+        amb.thesisTitleEt.setText("")
+        amb.jobOfInterestEt.setText("")
     }
 
 
