@@ -1,8 +1,14 @@
 package br.edu.ifsp.scl.ads.prdm.sc3033945.havagas
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
+import android.widget.CheckBox
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifsp.scl.ads.prdm.sc3033945.havagas.databinding.ActivityMainBinding
@@ -33,6 +39,10 @@ class MainActivity : AppCompatActivity() {
 
         amb.clearBtn.setOnClickListener{
             clearForm()
+        }
+
+        amb.saveBtn.setOnClickListener {
+            showSummary()
         }
 
         amb.degreeSp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -121,6 +131,59 @@ class MainActivity : AppCompatActivity() {
         amb.thesisTitleEt.setText("")
         amb.jobOfInterestEt.setText("")
     }
+
+    private fun showSummary() {
+        val builder = StringBuilder()
+
+        fun appendEditText(label: String, et: EditText) {
+            val value = et.text.toString().ifBlank { "Não informado" }
+            builder.append("$label: $value\n")
+        }
+
+        fun appendCheckBox(label: String, cb: CheckBox) {
+            val value = if (cb.isChecked) "Sim" else "Não"
+            builder.append("$label: $value\n")
+        }
+
+        fun appendRadioGroup(label: String, rg: RadioGroup) {
+            val selectedId = rg.checkedRadioButtonId
+            val selectedText = if (selectedId != -1) findViewById<RadioButton>(selectedId).text else "Não informado"
+            builder.append("$label: $selectedText\n")
+        }
+
+        fun appendSpinner(label: String, spinner: Spinner) {
+            val selected = spinner.selectedItem?.toString() ?: "Não informado"
+            builder.append("$label: $selected\n")
+        }
+
+
+        appendEditText("Nome", amb.nameEt)
+        appendEditText("Email", amb.emailEt)
+        appendCheckBox("Receber notificações por email", amb.emailNotificationsCb)
+        appendEditText("Telefone", amb.phoneEt)
+        appendRadioGroup("Tipo de telefone", amb.phoneTypeRg)
+        appendCheckBox("Adicionar celular", amb.addCellphoneCb)
+        appendEditText("Celular", amb.cellphoneEt)
+        appendRadioGroup("Gênero", amb.genderRg)
+        appendEditText("Data de nascimento", amb.birthdayEt)
+        appendSpinner("Grau de escolaridade", amb.degreeSp)
+        appendEditText("Ano do grau", amb.degreeYearEt)
+        appendEditText("Ano de graduação", amb.yearOfGraduationEt)
+        appendEditText("Instituição", amb.institutionEt)
+        appendEditText("Ano de conclusão", amb.yearOfCompletionEt)
+        appendEditText("Título da tese", amb.thesisTitleEt)
+        appendEditText("Nome da instituição", amb.institutionNameEt)
+        appendEditText("Orientador", amb.advisorEt)
+        appendEditText("Vaga de interesse", amb.jobOfInterestEt)
+
+        AlertDialog.Builder(this)
+            .setTitle("Informacoes")
+            .setMessage(builder.toString())
+            .setPositiveButton("OK", null)
+            .show()
+    }
+
+
 
 
 }
